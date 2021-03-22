@@ -1,0 +1,131 @@
+[{
+  "_id": {
+    "$oid": "605583ce56360b1874c3cb76"
+  },
+  "name": "Advik",
+  "email": "advik@gmail.com",
+  "createdAt": {
+    "$date": "2021-03-20T05:10:38.417Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-20T05:10:38.417Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6055840b56360b1874c3cb77"
+  },
+  "name": "Rudra",
+  "email": "rudra@gmail.com",
+  "createdAt": {
+    "$date": "2021-03-20T05:11:39.375Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-20T05:11:39.375Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6055842256360b1874c3cb78"
+  },
+  "name": "Aayansh",
+  "email": "aayansh@gmail.com",
+  "createdAt": {
+    "$date": "2021-03-20T05:12:02.962Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-20T05:12:02.962Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6055843e56360b1874c3cb79"
+  },
+  "name": "Adi",
+  "email": "adi@gmail.com",
+  "createdAt": {
+    "$date": "2021-03-20T05:12:30.367Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-20T05:12:30.367Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6055845156360b1874c3cb7a"
+  },
+  "name": "Dhruv",
+  "email": "dhruv@gmail.com",
+  "createdAt": {
+    "$date": "2021-03-20T05:12:49.757Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-20T05:12:49.757Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6055846556360b1874c3cb7b"
+  },
+  "name": "Veer",
+  "email": "veer@gmail.com",
+  "createdAt": {
+    "$date": "2021-03-20T05:13:09.742Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-20T05:13:09.742Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6055847a56360b1874c3cb7c"
+  },
+  "name": "Ahmed",
+  "email": "ahmed@gmail.com",
+  "createdAt": {
+    "$date": "2021-03-20T05:13:30.487Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-20T05:13:30.487Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6055849056360b1874c3cb7d"
+  },
+  "name": "Viyaan",
+  "email": "viyaan@gmail.com",
+  "createdAt": {
+    "$date": "2021-03-20T05:13:52.782Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-20T05:13:52.782Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "605584a356360b1874c3cb7e"
+  },
+  "name": "Shiv",
+  "email": "shiv@gmail.com",
+  "createdAt": {
+    "$date": "2021-03-20T05:14:11.420Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-20T05:14:11.420Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "605584bf56360b1874c3cb7f"
+  },
+  "name": "Atharv",
+  "email": "atharv@gmail.com",
+  "createdAt": {
+    "$date": "2021-03-20T05:14:39.966Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-20T05:14:39.966Z"
+  },
+  "__v": 0
+}]

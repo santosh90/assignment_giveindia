@@ -1,0 +1,40 @@
+[{
+  "_id": {
+    "$oid": "6055a232cfaa8e32a88d7c8b"
+  },
+  "account_type_id": 1,
+  "account_type": "Savings",
+  "createdAt": {
+    "$date": "2021-03-20T07:20:18.039Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-20T07:20:18.039Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6055a26f3e152c433c2d891d"
+  },
+  "account_type_id": 2,
+  "account_type": "Current",
+  "createdAt": {
+    "$date": "2021-03-20T07:21:19.163Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-20T07:21:19.163Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6055a2813e152c433c2d891e"
+  },
+  "account_type_id": 3,
+  "account_type": "BasicSavings",
+  "createdAt": {
+    "$date": "2021-03-20T07:21:37.648Z"
+  },
+  "updatedAt": {
+    "$date": "2021-03-20T07:21:37.648Z"
+  },
+  "__v": 0
+}]
