@@ -6,6 +6,57 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
   <script>
+      function newBalance(account_id)
+      {
+        
+        return JSON.parse($.ajax({
+            type: "GET",
+            url:'/newBalance/'+account_id,
+            dataType: 'json',
+            global: false,
+            async: false,
+            success : function(data) {
+                return data;
+            }
+        }).responseText);
+        ///console.log(getBalance);
+        //return getBalance;
+      }
+      function getAccounBYAccountNum(account_id)
+       {
+        $.get('/get-accountsumry/'+account_id, function(data, status){
+         var htmlOut='';
+         htmlOut +='<h2>Account Detail</h2>';
+              htmlOut +='<table class="table table-dark">';
+                htmlOut +='<tr>';
+                  htmlOut +='<th scope="col">S.No.</th>';
+                  htmlOut +='<th scope="col">From Account</th>';
+                  htmlOut +='<th scope="col">New Src Balance</th>';
+                  htmlOut +='<th scope="col">To Account</th>';
+                  htmlOut +='<th scope="col">Total Dest Balance</th>';
+                  htmlOut +='<th scope="col">Transfered At</th>';
+                  htmlOut +='</tr>';
+                  for(let i=0;i<data.length;i++)
+                  {
+                    //newBalance(data[i].from_account);
+                    ///newBalance(data[i].to_account);  
+                    htmlOut +='<tr>';  
+                    htmlOut +='<td scope="col">'+(i+1)+'</td>'; 
+                    htmlOut +='<td scope="col">'+data[i].from_account+'</td>';  
+                    htmlOut +='<td scope="col" id="newSrcBalance-'+data[i].from_account+'">Rs. '+newBalance(data[i].from_account).balance_amount+'</td>';
+                    htmlOut +='<td scope="col">'+data[i].to_account+'</td>';  
+                    htmlOut +='<td scope="col" id="totalDestBalance-'+data[i].to_account+'">Rs. '+newBalance(data[i].to_account).balance_amount+'</td>';
+                    htmlOut +='<td scope="col">'+data[i].updatedAt+'</td>';
+                    htmlOut +='</tr>';
+                  }
+           $('#output').html(htmlOut);
+        });
+       }
+     $(document).ready(function(e){
+        var from_account=$('#FromAccount').val();
+        getAccounBYAccountNum(from_account);
+        ///console.log(newBalance(from_account).balance_amount);
+     });
      $(document).on('submit','#assign-to-account',function(e){
       var data={};
       data['from_account']=$('#FromAccount').val();
@@ -22,8 +73,10 @@
             type: 'POST',
             data: data
            }).done(function(response){
+
              if(response.status==200)
              {
+                getAccounBYAccountNum($('#FromAccount').val());   
               $('#message').html("Fund transfer successful");
              }else  if(response.status==100)
              {

@@ -3,7 +3,7 @@ const request=require('request');
 var crypto = require('crypto');
 const router = express.Router();
 const fetch = require('node-fetch');
-const {signup,getuser,userById,assigntoaccount,getAccountById,getaccountList,transaction,getAccountSumry}=require('../controllers/user');
+const {signup,getuser,userById,assigntoaccount,getAccountById,getaccountList,transaction,getAccountSumry,newBalance}=require('../controllers/user');
 const {createaccounttype,getAccountType}=require('../controllers/accountType');
 
 //randomValueBase64
@@ -26,6 +26,7 @@ async function getapi(url) {
     console.log(data);
     
 }
+router.get('/newBalance/:accountnum',newBalance)
 router.get('/get-accountsumry/:accountnum',getAccountSumry);
 
 //view-account

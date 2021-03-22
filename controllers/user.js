@@ -111,8 +111,8 @@ exports.transaction = (req, res) => {
 
 exports.getAccountSumry=(req,res)=>{
     let account_number=req.params.accountnum;
-    console.log(account_number);
-    Useraccount.findOne({"account_number":account_number}).exec((err,data)=>{
+    ///console.log(account_number);
+    Transaction.find({"from_account":account_number}).exec((err,data)=>{
         if(!data)
         {
             return res.json({
@@ -121,6 +121,19 @@ exports.getAccountSumry=(req,res)=>{
         }
         res.json(data);  
     });
+}
+
+exports.newBalance=(req,res)=>{
+    let account_number=req.params.accountnum;
+    Useraccount.findOne({"account_number":account_number}).exec((err,data)=>{
+        if(!data)
+        {
+            return res.json({
+                error: 'Data not found'
+            });
+        }
+        res.json(data); 
+    });  
 }
 
 // create user
